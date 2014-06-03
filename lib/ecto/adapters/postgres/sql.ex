@@ -21,7 +21,7 @@ defmodule Ecto.Adapters.Postgres.SQL do
       search: "@@" ]
 
   functions =
-    [ {{:downcase, 1}, "lower"}, {{:upcase, 1}, "upper"} ]
+    [ {{:downcase, 1}, "lower"}, {{:upcase, 1}, "upper"}, {{:to_tsquery, 1}, "to_tsquery"} ]
 
   @binary_ops Dict.keys(binary_ops)
 

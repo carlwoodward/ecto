@@ -206,6 +206,9 @@ defmodule Ecto.Query.API do
   def upcase(string)
   defs upcase(string) :: string
 
+  def to_tsquery(string)
+  defs to_tsquery(string) :: string
+
   @doc "Returns the current date and time."
   def now()
   defs now() :: datetime
